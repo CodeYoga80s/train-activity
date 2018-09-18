@@ -14,10 +14,6 @@ firebase.initializeApp(config);
   // Create a variable to reference the database
   var database = firebase.database();
 
-    // var trainName = "";
-    // var destination = "";
-    // var trainTime = "";
-    // var Frequency = "";
     
 
     $("#subButton").on("click", function(event) {
@@ -75,7 +71,7 @@ firebase.initializeApp(config);
         ' </td><td>' + tMinutesTillTrain + ' </td></tr>');
   
       // Clear input fields
-      $("#trainName, #destination, #trainTime, #interval").val("");
+      $("#trainName, #destination, #trainTime, #frequency").val("");
       return false;
     },
       //Handle the errors
